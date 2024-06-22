@@ -1,0 +1,12 @@
+body {
+  background-color: #45a;
+  font-family: "Roboto", sans-serif;
+}
+
+.login-form {
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+}

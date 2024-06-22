@@ -1,0 +1,34 @@
+{
+  "name": "htmx-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "source ./.env.development && nodemon --exec ts-node src/index.ts",
+    "watch-server": "nodemon --watch scripts scripts/auto-reload.mjs",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/static/output.css --watch",
+    "dev": "concurrently \"npm:watch-server\" \"npm:tailwind\" \"npm:start:dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@radix-ui/react-form": "^0.0.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-react-views": "^0.11.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.3.3",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.2",
+    "tailwindcss": "^3.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
